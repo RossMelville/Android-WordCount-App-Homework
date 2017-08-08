@@ -9,10 +9,10 @@ import java.util.HashMap;
 public class WordCounter {
 
     String passage;
-    HashMap wordTracker;
 
     public WordCounter(String passage) {
         this.passage = passage;
+        HashMap<String, Integer> wordTracker = new HashMap<String, Integer>();
     }
 
     public int wordCount() {

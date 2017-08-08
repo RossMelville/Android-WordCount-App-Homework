@@ -26,6 +26,9 @@ public class WordCounterTest {
     }
 
     @Test
+    public void testCanReturnNumberOfWordOccurencesInPassage() {
+
+    }
 
 
 }
