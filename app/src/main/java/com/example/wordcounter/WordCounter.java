@@ -9,18 +9,28 @@ import java.util.HashMap;
 public class WordCounter {
 
     String passage;
+    HashMap<String, Integer> wordTracker;
 
     public WordCounter(String passage) {
         this.passage = passage;
-        HashMap<String, Integer> wordTracker = new HashMap<String, Integer>();
+        wordTracker = new HashMap<String, Integer>();
     }
 
     public int wordCount() {
         int count = 0;
         String[] words = this.passage.split(" ");
-        for(String word : words) {
-            count += 1;
+        for (String word : words) {
+            if (wordTracker.containsKey(word) == true) {
+                Integer value = wordTracker.get(word);
+                wordTracker.put(word, value + 1);
+                count += 1;
+            } else if (wordTracker.containsKey(word) == false) {
+                wordTracker.put(word, 1);
+                count += 1;
+            }
         }
         return count;
     }
+
 }
+

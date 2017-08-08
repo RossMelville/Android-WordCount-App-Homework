@@ -26,7 +26,8 @@ public class WordCounterTest {
     }
 
     @Test
-    public void testCanReturnNumberOfWordOccurencesInPassage() {
+    public void testCanReturnNumberOfWordOccurrencesInPassage() {
+        assertEquals("Hello - 1, my - 1, name - 1, is - 1, Ross - 1", wordCounter.wordOccurrence());
 
     }
 
