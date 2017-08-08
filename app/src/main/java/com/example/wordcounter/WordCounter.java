@@ -1,5 +1,7 @@
 package com.example.wordcounter;
 
+import java.util.HashMap;
+
 /**
  * Created by rossmelville on 08/08/2017.
  */
@@ -7,6 +9,7 @@ package com.example.wordcounter;
 public class WordCounter {
 
     String passage;
+    HashMap wordTracker;
 
     public WordCounter(String passage) {
         this.passage = passage;

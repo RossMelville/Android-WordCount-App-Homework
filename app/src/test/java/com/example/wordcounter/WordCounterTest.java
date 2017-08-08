@@ -25,4 +25,7 @@ public class WordCounterTest {
         assertEquals(5, wordCounter.wordCount());
     }
 
+    @Test
+
+
 }
