@@ -1,6 +1,10 @@
 package com.example.wordcounter;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 /**
  * Created by rossmelville on 08/08/2017.
@@ -31,6 +35,8 @@ public class WordCounter {
         }
         return count;
     }
+
+
 
 }
 

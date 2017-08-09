@@ -25,11 +25,7 @@ public class WordCounterTest {
         assertEquals(5, wordCounter.wordCount());
     }
 
-    @Test
-    public void testCanReturnNumberOfWordOccurrencesInPassage() {
-        assertEquals("Hello - 1, my - 1, name - 1, is - 1, Ross - 1", wordCounter.wordOccurrence());
 
-    }
 
 
 }
